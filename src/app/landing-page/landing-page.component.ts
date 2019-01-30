@@ -412,7 +412,7 @@ initially;
   gotToAdding(){
     this.router.navigate(['/adding-data']);
   }
-  goToProfile(){
+  gotToProfile(){
     this.router.navigate(['/profile']);
   }
 
