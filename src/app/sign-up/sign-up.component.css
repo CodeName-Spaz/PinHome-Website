@@ -1,7 +1,7 @@
 .container{
     /* border: solid 2px grey; */
     box-shadow: 0 5px 20px grey;
-    height: 50vh;
+    height: 60vh;
     width: 50vw;
     margin: 0 auto;
     margin-top: 200px;
@@ -10,14 +10,14 @@
 }
 
 .seperator{
-    height: 50vh;
+    height: 60vh;
     width: 25vw; 
-    background-image:linear-gradient(rgba(0, 0, 0, 0.445),#1e2a78),url('../../assets/imgs/bacckkkkk.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.445),#1e2a78),url('../../assets/imgs/house.jpg');
     background-attachment: fixed;
 }
 
 .seperator2{
-    height: 50vh;
+    height: 60vh;
     width: 25vw; 
     /* border: solid red 2px; */
 }
@@ -70,7 +70,7 @@ h3{
     width: 70%;
     height: 30px;
     font-size: 1.2em;
-    margin-left: 20px;
+    margin-left: 70px;
     margin-top: 20px;
 }
 
