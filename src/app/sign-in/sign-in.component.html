@@ -1,85 +1,76 @@
-
-<div class="divver">
-        <div class="customAlert0">
-        <div class="text">
-          <img src="../../assets/imgs/custom alert/loader.gif" alt="" class="loading"><br>
-          {{message}}
-        </div>
-        <div class="confirmer" id="theOkay" (click)="dismissAlert()">
-          <div class="OK">
-            OK
-          </div>
-        </div>
-      </div>
-  </div>
-
-   <!--  <div class="content">
-    <div class="container">
-      <div class="statement">
-        <h1>Welcome</h1>
-        <h2> We're super excited to have you on board!</h2>
-      </div>
-      <div class="form">
-        
-        <div class="intro">
-          <h3 class="theH3">Login as an incorporator</h3>
-        </div>
-        <input class="text-field" type="text" #email placeholder="Email">
-        <br>
-        <input class="text-field" type="password" #password placeholder="Password">
-        <div class="space"></div>
-        <div class="button" (click)="login(email.value,password.value, $event)">
-          <p class="P">
-            Sign In
-          </p>
-        </div>
-        <br> -->
-        <!-- <div class="forgot" (click)="forgotpassword(email.value)">
-          <p class="iForgot">Forgot your password? Click here</p>
-        </div>
-        
-      </div>
-
+<!-- <body class="thebody">
+  <div class="container">
+    <div class="seperator">
+      <h1>Welcome</h1>
+      <p>______</p>
+      <h3>We're super excited to have you on board!</h3>
     </div>
-  </div>
-  <div class="holder">
 
-    <div class="buttonClick" (click)="goToSignUp()">
-      Sign Up
-    </div>
-  </div> -->
-  <body class="thebody">
-    <div class="container">
-      <div class="seperator">
-        <h1>Welcome back!</h1>
-        <p>______</p>
-        <h3>We're super excited to have you on board!</h3>
-      </div>
+    <div class="seperator2">
+      <h2>Sign In</h2>
+      <p >
+        Don't have an account ?
+        <b style="color: blue; font-weight: 100; text-decoration: underline" (click)="goToSignIn()">Create your account</b>, it takes less than a minute.
+      </p>
 
-      <div class="seperator2">
-       <h2>Sign In</h2>
-       <p class="message">
-         Don't have an account ? <b (click)="goToSignUp()" style="color: blue; font-weight: 100; text-decoration: underline">Create your account</b>, it takes less than a minute.
-       </p>
-
-       <div class="textfield">
-       <input #email type="email" placeholder="Email"><img class="person" src="../../assets/imgs/baseline_email_black_18dp.png">
+      <div class="textfield">
+        <input #email type="text" placeholder="Email">
+        <img style="opacity: 0.5;" class="person" src="../../assets/imgs/1x/baseline_person_black_18dp.png">
       </div>
 
       <div class="textfield">
-          <input #password type="password" placeholder="Password"><img class="person" src="../../assets/imgs/baseline_lock_black_18dp.png">
-         </div>
-
-         <table class="theTable">
-            <tr>
-              <td class="password"> Forgot your Password?</td>
-            </tr>
-          </table>
-
-          <div class="divButton" >
-              <button class="theBUTTON" (click)="login(email.value,password.value, $event)">Login</button>
-          </div>
+        <input #password type="text" placeholder="Password">
+        <img style="opacity: 0.5;" class="person" src="../../assets/imgs/baseline_lock_black_18dp.png">
       </div>
 
+      <table class="theTable">
+        <tr>
+          <td class="password" (click)="forgotpassword(email.value)"> Forgot Password?</td>
+        </tr>
+      </table>
+
+      <div class="divButton">
+        <button class="theBUTTON" (click)="login(email.value, password.value)">Login</button>
+      </div>
     </div>
-</body>
+
+  </div>
+</body> -->
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="maindiv">
+  <div class="box">
+    <div class="row">
+      <div class="column1">
+        <h1>Welcome</h1>
+        <p>______</p>
+        <h3>We're super excited to have you on board!</h3>
+      </div>
+      <div class="column">
+        <h2>Sign In</h2>
+        <p>
+          Don't have an account ?
+          <b style="color: blue; font-weight: 100; text-decoration: underline" (click)="goToSignIn()">Create your account</b>, it takes less than a minute.
+        </p>
+
+        <label for="">
+        <i style="position: relative; top: 35px; left: 230px; color: #20676e" class="material-icons">mail</i>
+      </label>
+      <input #email type="text" placeholder="Email">
+
+        <label for="">
+          <i style="position: relative; top: 35px; left: 230px; color: #20676e" class="material-icons">lock</i>
+        </label>
+        <input #password type="text" placeholder="Password">
+
+
+        <p class="password" (click)="forgotpassword(email.value)"> Forgot Password?</p>
+        <button (click)="login(email.value, password.value)">Login</button>
+
+      </div>
+    </div>
+  </div>
+</div>

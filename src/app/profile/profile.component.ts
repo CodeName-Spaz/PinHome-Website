@@ -3,6 +3,7 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import {AngularFireAuth} from 'angularfire2/auth';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class ProfileComponent implements OnInit {
  userId;
  dbPath
  email;
-  constructor(private authen : AngularFireAuth, private db: AngularFireDatabase) { }
+  constructor(private authen : AngularFireAuth, private db: AngularFireDatabase, public router:Router) { }
 
   ngOnInit() {
     this.authen.authState.subscribe(data =>{
@@ -32,7 +33,9 @@ export class ProfileComponent implements OnInit {
       changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))))
      });
   }
-
+  addBrunch(){
+   this.router.navigate(['adding-data'])
+  }
 
 
 

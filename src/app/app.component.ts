@@ -34,12 +34,12 @@ export class AppComponent {
         this.state = 1;
         prof[0].style.display = "block";
         signOutBtn[0].style.display = "block";
-        this.router.navigate(['/adding-data']);
+        this.router.navigate(['/profile']);
       }
       else{
         console.log('no user')
         this.state = 0;
-        this.router.navigate(['/landing-page']);
+        this.router.navigate(['/profil']);
         prof[0].style.display = "none";
         signOutBtn[0].style.display = "none";
       }

@@ -51,20 +51,20 @@ export class AddingDataComponent {
         changes.map(c => ({ key: c.payload.key, ...c.payload.val() }))
       )
     );
-    this.authen.auth.onAuthStateChanged(user =>{
-      console.log(user)
-      if (user){
-        this.state = 1;
+    // this.authen.auth.onAuthStateChanged(user =>{
+    //   console.log(user)
+    //   if (user){
+    //     this.state = 1;
 
-        this.router.navigate(['/adding-data'])
-      }
-      else{
-        console.log('no user')
-        this.state = 0;
-        this.router.navigate(['/sign-in'])
-      }
-     });
-    })
+    //     this.router.navigate(['/adding-data'])
+    //   }
+    //   else{
+    //     console.log('no user')
+    //     this.state = 0;
+    //     this.router.navigate(['/sign-in'])
+    //   }
+   });
+    // })
   }
 
   initMap(address) {
@@ -262,8 +262,9 @@ export class AddingDataComponent {
   
     else {
       this.getcoo(this.OrganizationAdress).then((data: any) => {
+        this.authen.authState.subscribe(data2 =>{
         this.long = data.lat;
-        this.homelist = this.db.list('OrganizationList');
+        this.homelist = this.db.list('brunches/' +  data2.uid + '/');
         this.homelist.push({
           OrganizationName: this.name,
           OrganizationAdress: this.OrganizationAdress,
@@ -296,6 +297,7 @@ export class AddingDataComponent {
         this.urlLogo = "";
         this.contacts = "";
       })
+    })
     }
 
     if (this.name != undefined) {
