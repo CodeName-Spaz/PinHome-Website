@@ -39,7 +39,7 @@ export class AppComponent {
       else{
         console.log('no user')
         this.state = 0;
-        this.router.navigate(['/profil']);
+        this.router.navigate(['/profile']);
         prof[0].style.display = "none";
         signOutBtn[0].style.display = "none";
       }

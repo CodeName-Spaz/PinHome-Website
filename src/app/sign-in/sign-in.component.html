@@ -57,17 +57,17 @@
         </p>
 
         <label for="">
-        <i style="position: relative; top: 35px; left: 230px; color: #20676e" class="material-icons">mail</i>
+        <i style="position: relative; top: 35px; left: 160px; color: #20676e" class="material-icons">mail</i>
       </label>
       <input #email type="text" placeholder="Email">
 
         <label for="">
-          <i style="position: relative; top: 35px; left: 230px; color: #20676e" class="material-icons">lock</i>
+          <i style="position: relative; top: 35px; left: 160px; color: #20676e" class="material-icons">lock</i>
         </label>
         <input #password type="text" placeholder="Password">
 
 
-        <p class="password" (click)="forgotpassword(email.value)"> Forgot Password?</p>
+        <p class="password" (click)="forgotpassword(email.value)"> Forgot your Password?</p>
         <button (click)="login(email.value, password.value)">Login</button>
 
       </div>

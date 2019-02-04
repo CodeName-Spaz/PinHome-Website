@@ -75,7 +75,7 @@
     width: 110px;
     border-radius: 100px;
     border: solid rgb(212, 212, 212) 3px;
-    margin-top: 20px;
+    margin-bottom: 0px;
     margin-left: 30px;
     
 }
@@ -102,12 +102,12 @@ h2{
 .seperator{
     /* border: #20676e solid 2px; */
     box-shadow: 0 0 10px grey;
-    width: 600px;
+    width: 56%;
     height: 35vh;
     float: left;
+    text-align: center;
     overflow-y: scroll;
     background-color: #2c747a;
-    /* background-image: url('../../assets/imgs/brother.jpg'); */
 }
 
 .seperator::-webkit-scrollbar{
@@ -115,11 +115,14 @@ h2{
 }
 .seperator2{
     /* border: #20676e solid 2px; */
-    width: 600px;
-    height: 54.3vh;
+    width: 44%;
+    height: 35vh;
     float: right;
-    /* background-image: url('../../assets/imgs/brother.jpg'); */
-    
+    overflow-y: scroll; 
+    overflow-x: hidden;    
+}
+.seperator2::-webkit-scrollbar{
+    display: none;
 }
 
 h1{
@@ -137,7 +140,10 @@ h1{
 .textfield{
     width: 100%;
     height: 50px;
-}
+    /* border: 2px solid pink; */
+    margin: 0 auto;
+    text-align: center
+    }
 .textfield input{
     /* border: none; */
     border-top: 2px;  
@@ -148,8 +154,9 @@ h1{
     width: 70%;
     height: 30px;
     font-size: 1.2em;
-    margin-left: 90px;
+    margin-left: 25px;
     margin-top: 10px;
+    
     color: #ffffff;
 }
 .person{
@@ -163,16 +170,17 @@ h1{
 .theDescription{
     border: #20676e solid 2px;
     width: 69%;
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    margin: 0 auto;
     margin-top: 10px;
     height: 140px; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
-.theTabels{
-    padding-left: 5px;
-}
+/* .theTabels{
+    padding-right: 20px;
+} */
 
 .firstRow{
     background: #20676e;
@@ -184,6 +192,7 @@ table{
     /* border: 2px solid red; */
     width: 100%;
     height: 54.3vh;
+    margin-left: -50px;
 }
 tr{
     /* border: 2px solid green; */
@@ -210,15 +219,15 @@ td{
 }
 
 .thePicture2{
-    height: 150px;
-    width: 192px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
     z-index: 1000000;
     /* padding-left:17px; */
-    padding-bottom: 300px;
-    object-fit: cover;
-    position: relative;
-    bottom: 137px;
-    display: grid;
+        object-fit: cover;
+    /* position: relative; */
+    
+    /* display: grid; */
     
 }
 
@@ -255,7 +264,7 @@ td{
 }
 
 .saveButton{
-    /* border: #20676e solid 2px */
+    border: #ff0000 solid 2px;
     text-align: center
 }
 
@@ -267,17 +276,19 @@ td{
     background-color: #ffffff00;
     color: #ffffff;
     border-radius: 100px;
-    margin-left: 245px;
+    /* margin-left: 245px; */
     position: relative;
     bottom: 25px;
+    left: 10%;
+    transform: translateX(-50%)
   
 }
 
 .theH1{
-    color: rgb(141, 137, 137);
+    color: rgb(68, 60, 60);
     position: relative; 
-    bottom: 60px; 
-    padding-top: 60px;
+    top: -10px; 
+    /* padding-top: 60px; */
 
 }
 
@@ -292,15 +303,30 @@ p{
 }
 
 .BranchButton{
-    border: white 2px solid;
+    border: none;
     position: relative;
-    left: 60px;
+    right: 0px;
     height: 50px;
-    font-size: 1.8;
-    color: white;
-    background-color: #20676e;
-    box-shadow: 0 0 10px #20676e;
+    /* line-height: -10px; */
+    /* text-decoration: bold; */
+    color: #20676e;
+    background-color: #20676e00;
+    box-shadow: 0 0 10px #20676e00 ;
+    font-weight: 600;
+    font-size: 13px;
+    /* padding: 10px; */
+    /* border-radius: 100px; */
+    /* padding-left: 75%; */
 
+}
+.BranchButton i{
+    font-weight: 800;
+    line-height:40px;
+    padding-right: 5px;    
+}
+
+.theADDBtn{
+margin-left:300px;
 }
 
 
@@ -310,3 +336,29 @@ p{
 
 
 
+.rightPortion{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* border: 2px solid grey; */
+    height: 100%;
+    width: 100%;
+}
+.imgContainer{
+    position: relative;
+    width: 30%;
+    height: 50%;
+    padding: 5px;
+    /* border: 2px solid red; */
+    /* margin: 0 auto; */
+}
+.imgContainer h4{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    text-transform: capitalize;
+}
