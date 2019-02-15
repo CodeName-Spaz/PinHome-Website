@@ -1,23 +1,28 @@
 .maindiv{
-    height: 130vh;
-    width: 100vw;
-    margin-top: -300px; 
-    background-image:linear-gradient(rgba(12, 33, 43, 0.5),rgba(16, 60, 78, 0.685)),url('../../assets/imgs/tree.jpg');
-    /* background: linear-gradient(rgba(13, 32, 41, 0.281),rgba(5, 59, 77, 0.904)),url('../../assets/imgs/default-cover.jpg'); */
-    background-size: cover;
-    background-repeat: no-repeat; 
-     background-position: top; 
-     overflow-y:hidden;
-     overflow-x:hidden;
-     position: fixed;
-     margin-left: -15px;
-}
-.box{
     position: absolute;
-    top: 0;
+    top: 0%;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d6fcfe;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23018790' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.box{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,24 +35,31 @@
   /* Create two equal columns that floats next to each other */
   .column {
     float: left;
-    width: 650px;
+    width: 550px;
     padding: 10px;
-    height: 650px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
     /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #10243D;
     
+}
+
+.Account{
+    text-align: left;
+
 }
 .column1{
     
-    background-image: url('../../assets/imgs/tree.jpg');
+    /* background-image: linear-gradient(rgba(12, 33, 43, 0.007),rgba(255, 255, 255, 0.363)); */
+    /* background-image: url('../../assets/imgs/london+flower+market-2.jpg'); */
+    background-color: 	#018790;
     float: left;
-    width: 650px;
+    width: 550px;
     padding: 10px;
-    height: 650px; /* Should be removed. Only for demonstration */
+    height: 700px; /* Should be removed. Only for demonstration */
     /* text-align: center; */
     display: flex;
     justify-content: center;
@@ -55,6 +67,7 @@
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat; 
+    /* box-shadow: 0 0 10px white; */
 }
   
   /* Clear floats after the columns */
@@ -62,19 +75,25 @@
     content: "";
     display: table;
     clear: both;
-    box-shadow: 0 0 10px
+    /* box-shadow: 0 0 10px */
   
   }
   h1{
       font-weight: 100;
       color: white;
       font-size: 3.8em;
+      /* text-shadow: 0 0 10px black; */
+      /* position: relative;
+      bottom: 40px; */
+      position: relative;
+      bottom: 10px; 
   }
   h2{
       text-align: left;
       width: 80%;
-      font-size: 2.5em;
-      color: #666969;
+      font-size: 3em;
+      color: white;
+      font-weight: 100;
 
   }
 
@@ -82,7 +101,7 @@
       font-size: 1.5em; 
       font-weight: 100;
       color: white;
-      text-shadow: 0 0 10px black;
+      /* text-shadow: 0 0 10px black; */
   }
   p{
       width: 80%;
@@ -90,30 +109,48 @@
       color: white;
       /* font-size: 1.8em; */
   } 
-  .column p{
-      color: black;
+
+
+
+  .column1 p{
+      color: white;
       font-size: 1.2em;
+      position: relative;
+      bottom: 20px;
   }
   input{
       width: 80%;
       min-width: 300px;
       margin: 9px;
-      height: 25px;
-      border-bottom: 2px #20676e solid;
+      height: 55px;
+      border-bottom: 2px #ffffff solid;
+      border-top: 2px #ffff solid;
+      border-right: 2px solid white;
+      border-left: 2px solid white;
+      border-radius: 50px;
       background-color: rgba(255, 255, 255, 0);
-      border-left: 0px;
-      border-right: 0px;
-      border-top: 0px;
-      font-size: 1.3em;
+      font-size: 1em;
+      padding-left: 20px;
+      color: white;
     
+  }
+
+  ::-webkit-input-placeholder{
+      color: white;
   }
   button{
       height: 45px;
-      width: 100px;
-      border: #20676e 2px solid;
+      width: 300px;
+      border: #018790 2px solid;
+      box-shadow: 0 0 10px #018790;
       border-radius: 100px;
       background-color: white;
-      color:#20676e
+      color:white;
+      font-size: 1em;
+      font-weight: 100;
+      background-color: #018790;
+      margin-top: 30px;
+
   }
 
   .person{
@@ -124,275 +161,12 @@
     top: 5px;
 }
 
-@media screen and (min-width: 768px){
-   @media screen and (max-width: 1024px){
 
-    .maindiv{
-        height: 130vh;
-        width: 100vw;
-        margin-top: -300px; 
-        background-image:linear-gradient(rgba(12, 33, 43, 0.5),rgba(16, 60, 78, 0.685)),url('../../assets/imgs/tree.jpg');
-        /* background: linear-gradient(rgba(13, 32, 41, 0.281),rgba(5, 59, 77, 0.904)),url('../../assets/imgs/default-cover.jpg'); */
-        background-size: cover;
-        background-repeat: no-repeat; 
-         background-position: top; 
-         overflow-y:hidden;
-         overflow-x:hidden;
-         position: fixed;
-         margin-left: -15px;
-    }
-    .box{
-        /* position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif; */
-        margin-left: 140px;
-        margin-top: 150px;
-    }
-    * {
-        box-sizing: border-box;
-      }
-      
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 500px;
-        padding: 10px;
-        height: 600px; /* Should be removed. Only for demonstration */
-        /* text-align: center; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: white;
-        
-    }
-    .column1{
-        
-        background-image: url('../../assets/imgs/tree.jpg');
-        float: left;
-        width: 500px;
-        padding: 10px;
-        height: 550px; /* Should be removed. Only for demonstration */
-        /* text-align: center; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-size: cover;
-        background-repeat: no-repeat; 
-    }
-      
-      /* Clear floats after the columns */
-      .row {
-        content: "";
-        display: table;
-        clear: both;
-        box-shadow: 0 0 10px
-      
-      }
-      h1{
-          font-weight: 100;
-          color: white;
-          font-size: 3.8em;
-      }
-      h2{
-          text-align: left;
-          width: 80%;
-          font-size: 2.5em;
-          color: #666969;
-    
-      }
-    
-      h3{
-          font-size: 1.5em; 
-          font-weight: 100;
-          color: white;
-          text-shadow: 0 0 10px black;
-      }
-      p{
-          width: 84%;
-          text-align: center;
-          color: white;
-          /* font-size: 1.8em; */
-      } 
-      .column p{
-          color: black;
-          font-size: 1.2em;
-      }
-      input{
-          width: 80%;
-          min-width: 300px;
-          margin: 9px;
-          height: 25px;
-          border-bottom: 2px #20676e solid;
-          background-color: rgba(255, 255, 255, 0);
-          border-left: 0px;
-          border-right: 0px;
-          border-top: 0px;
-          font-size: 1.3em;
-        
-      }
-      button{
-          height: 45px;
-          width: 100px;
-          border: #20676e 2px solid;
-          border-radius: 100px;
-          background-color: white;
-          color:#20676e
-      }
-    
-      .person{
-        height: 25px;
-        margin-right: -50px;
-        position: relative;
-        right: 25px;
-        top: 5px;
-    }
-
-   }
+.theRocket{
+    margin-top: 80px;
 }
-
-@media screen and (min-width: 320px){
-    @media screen and (max-width: 450px){
-        .maindiv{
-            height: 150vh;
-            width: 100vw;
-            margin-top: -300px; 
-            background-image:linear-gradient(rgba(12, 33, 43, 0.5),rgba(16, 60, 78, 0.685)),url('../../assets/imgs/tree.jpg');
-            /* background: linear-gradient(rgba(13, 32, 41, 0.281),rgba(5, 59, 77, 0.904)),url('../../assets/imgs/default-cover.jpg'); */
-            background-size: cover;
-            background-repeat: no-repeat; 
-             background-position: top; 
-             overflow-y:hidden;
-             overflow-x:hidden;
-             position: fixed;
-             margin-left: -15px;
-        }
-        .box{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 20px;
-            margin-top: 200px;
-        }
-        * {
-            box-sizing: border-box;
-          }
-          
-          /* Create two equal columns that floats next to each other */
-          .column {
-            float: left;
-            width: 400px;
-            padding: 10px;
-            height: 350px; /* Should be removed. Only for demonstration */
-            /* text-align: center; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: white;
-            
-        }
-        .column1{
-            
-            background-image: url('../../assets/imgs/tree.jpg');
-            float: left;
-            width: 400px;
-            padding: 10px;
-            height: 360px; /* Should be removed. Only for demonstration */
-            /* text-align: center; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-size: cover;
-            background-repeat: no-repeat; 
-        }
-          
-          /* Clear floats after the columns */
-          .row {
-            content: "";
-            display: table;
-            clear: both;
-            box-shadow: 0 0 10px
-          
-          }
-          h1{
-              font-weight: 100;
-              color: white;
-              font-size: 3em;
-          }
-          h2{
-              text-align: left;
-              width: 80%;
-              font-size: 1.8em;
-              color: #666969;
-        
-          }
-        
-          h3{
-              font-size: 1em; 
-              font-weight: 100;
-              color: white;
-              text-shadow: 0 0 10px black;
-          }
-          p{
-              width: 80%;
-              text-align: center;
-              color: white;
-              /* font-size: 1.8em; */
-          } 
-          .column p{
-              color: black;
-              font-size: 1em;
-              position: relative;
-              right: 20px;
-              bottom: 20px;
-              
-          }
-          input{
-              width: 80%;
-              min-width: 300px;
-              margin: 0px;
-              height: 20px;
-              border-bottom: 2px #20676e solid;
-              background-color: rgba(255, 255, 255, 0);
-              border-left: 0px;
-              border-right: 0px;
-              border-top: 0px;
-              font-size: 1em;
-             
-            
-          }
-          button{
-              height: 45px;
-              width: 100px;
-              border: #20676e 2px solid;
-              border-radius: 100px;
-              background-color: white;
-              color:#20676e
-          }
-        
-          .person{
-            height: 25px;
-            margin-right: -50px;
-            position: relative;
-            right: 25px;
-            top: 5px;
-        }
-
-    }
+.thepassword{
+    text-align: center;
+   padding-top: 20px;
 }
 

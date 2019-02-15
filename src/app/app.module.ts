@@ -17,6 +17,7 @@ import { GreetingComponent } from './greeting/greeting.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { MoreComponent } from './more/more.component';
 
 
 
@@ -32,6 +33,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     ProfileComponent,
     LandingPageComponent,
     WelcomePageComponent,
+    MoreComponent,
     
 
 

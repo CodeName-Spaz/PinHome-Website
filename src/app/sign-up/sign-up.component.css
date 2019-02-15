@@ -1,122 +1,412 @@
-.container{
-    height: 60vh;
-    width: 50vw;
-    margin: 0 auto;
-    margin-top: 200px;
+.maindiv{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: 250px;
-}
-.seperator{
-    height: 60vh;
-    width: 25vw; 
-    background-image:linear-gradient(rgba(12, 33, 43, 0.5),rgb(8, 64, 88)),url('../../assets/imgs/brother.jpg');
-    background-position: bottom ;
+    background-color: #d6fcfe;
+    background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 10px 12px 20px rgba(17, 17, 17, 0.466);
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23018790' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.box{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+    float: left;
+    width: 550px;
+    padding: 10px;
+    height: 700px; /* Should be removed. Only for demonstration */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #10243D;
     
 }
-.thebody{
-    height: 130vh;
-    width: 100vw;
-    margin-top: -300px; 
-    background: linear-gradient(rgba(13, 32, 41, 0.281),rgb(5, 59, 77)),url('../../assets/imgs/grandpa13.jpg');
+.column1{
+    
+    /* background-image: linear-gradient(rgba(12, 33, 43, 0.007),rgba(255, 255, 255, 0.363)); */
+    /* background-image: url('../../assets/imgs/london+flower+market-2.jpg'); */
+    background-color:   #018790;
+    float: left;
+    width: 550px;
+    padding: 10px;
+    height: 700px; /* Should be removed. Only for demonstration */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat; 
-     background-position: top; 
-     overflow-y:hidden;
-     overflow-x:hidden;
-     position: fixed;
-     margin-left: -15px;
-   
+    box-shadow: 0 0 10px white;
 }
-.seperator2{
-    height: 60vh;
-    width: 25vw; 
-    background-color: white;
-    box-shadow: 10px 12px 20px rgba(17, 17, 17, 0.466);
+.SignUp{
+    text-align: left;
+    width: 80%;
+    font-size: 3em;
+    color: white;
+    font-weight: 100;
+    padding: 40px;
+    margin: 0px;
 }
-.seperator p{
+.appname{
     text-align: center;
+    width: 80%;
+    font-size: 3em;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+ p{
+    color: white;
+    text-align: center;
+}
+h3{
+    font-size: 1.5em; 
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    /* font-family: monospace; */
+    /* text-shadow: 0 0 10px black; */
+}
+/* 
+p{
+    width: 80%;
+    text-align: center;
+    color: white;
     font-size: 1.8em;
-    position: relative;
-    top: 25px;
+}  */
+.Account{
+    /* position: relative;
+    bottom: 70px */
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    /* font-family: monospace; */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.Input1{
+    width: 75%;
+    min-width: 300px;
+    height: 40px;
+    border-bottom: 2px #ffffff solid;
+    border-top: 2px #ffff solid;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1em;
+    padding-left: 20px;
     color: white;
     
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+.loginBtn{
+        height: 45px;
+        width: 300px;
+        border: #ffffff 2px solid;
+        box-shadow: 0 0 10px #ffffff;
+        border-radius: 100px;
+        background-color: white;
+        color:white;
+        font-size: 1em;
+        font-weight: 100;
+        background-color: #018790;
+        margin-top: 30px;
+  
+    
+}
+.submitBtn{
+        height: 45px;
+        width: 75%;
+        width: 300px;
+        border: #018790 2px solid;
+        box-shadow: 0 0 10px #018790;
+        border-radius: 100px;
+        background-color: white;
+        color:white;
+        font-size: 1em;
+        font-weight: 100;
+        background-color: #018790;
+        margin-top: 30px;
+  
+}
+.textfield{
+    width: 80%;
+    min-width: 300px;
+    color: white;
+    font-size: 1em;
+}
+select{
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #01879000;
+    color: white;
+    border-radius: 100px;
+    border: solid 2px white;
+    font-size: 1em;
+    padding: 0px;
+}
+ option{
+     color: black;
+ }
+ /*secondpage */
+ .maindiv2{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d6fcfe;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23018790' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.box2{
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.column2 {
+    float: left;
+    width: 550px;
+    padding: 10px;
+    height: 700px; /* Should be removed. Only for demonstration */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #10243D;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    
+}
+.column2::-webkit-scrollbar{
+    display: none;
+}
+.column12{
+    
+    /* background-image: linear-gradient(rgba(12, 33, 43, 0.007),rgba(255, 255, 255, 0.363)); */
+    /* background-image: url('../../assets/imgs/london+flower+market-2.jpg'); */
+    background-color:   #018790;
+    float: left;
+    width: 550px;
+    padding: 10px;
+    height: 700px; /* Should be removed. Only for demonstration */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: 0 0 10px white;
 }
 h1{
     font-weight: 100;
-    text-align: center;
-    padding-top: 100px;
-    font-size: 2.3em; 
     color: white;
-    position: relative;
-    top: 30px;
+    font-size: 1.5em; 
+    text-align: center;
+    /* font-family: monospace; */
+    padding: 40px;
 }
-h2{
-    color: rgb(134, 126, 126);
-    padding-left: 50px;
-    font-size: 2em;
-    padding-top: 20px;  
+#theinstrution{
+    font-weight: 100;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    /* font-family: monospace; */
 }
 h3{
+    font-size: 1.5em; 
     font-weight: 100;
-    font-weight: 100;
+    color: white;
     text-align: center;
+    /* text-shadow: 0 0 10px black; */
+}
+p{
+    width: 80%;
+    text-align: center;
+    color: white;
+} 
+.input2{
+    width: 75%;
+    min-width: 300px;
+    height: 50000000%;
+    border-bottom: 2px #ffffff solid;
+    border-top: 2px #ffff solid;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1em;
     padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 60px;
     color: white;
-}
-.textfield{
-    width: 100%;
-    height: 50px;
-}
-.textfield input{
-    /* border: none; */
-    border-top: 2px;  
-    border-right: 0px;
-    border-left: 0px; 
-    border-color: #20676e;      
-    width: 70%;
-    height: 30px;
-    font-size: 1.2em;
-    margin-left: 73px;
-    margin-top: 5px;
-}
-.person{
-    height: 25px;
-    margin-right: -50px;
     position: relative;
-    right: 25px;
-    top: 5px;
+    top: 68px;
 }
-.theButton{
-    text-align: center;
-    margin-top: 30px;
-}
-.loginBtn{
-    height: 50px;
-    width: 140px;
-    border-radius: 40px;
+textarea{
+    height: 1000%;    
+    width: 75%;
+    color: rgb(255, 255, 255);
+    background-color: #01879000;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-left: 20px;
+    position: relative;
+    top: 68px;
+    z-index: 10000000000000000;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+::-webkit-input-placeholder{
     color: white;
-    background-color: #20676e00;
-    border: white solid 3px;
-    margin-top: 20px;
-    font-size: 1em;
 }
-.registerButton{
-    text-align: center;
-    margin-top: 10px;
+.submitBtn2{
+        height: 55px;
+        width: 75%;
+        width: 300px;
+        border: #018790 2px solid;
+        box-shadow: 0 0 10px #018790;
+        border-radius: 100px;
+        background-color: white;
+        color:white;
+        font-size: 1em;
+        font-weight: 100;
+        background-color: #018790;
+        position: relative;
+        top: 90px;
+       
+  
 }
-.registerBtn{
-    background-color: #20676e;
-    height: 50px;
-    width: 140px;
-    color: white;
-    font-size: 1em;
-    border: #20676e 2px solid;
-    box-shadow: 0 0 20px #20676e;
+.thetextarea2::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+ 
+}
+#cover2{
+    height: 150px;
+    object-fit: cover;
+    width: 400px;
+    position: relative;
+    bottom: 110px;
+}
+.Thecover2{
+    position: relative;
+    bottom: 50px;
+
+}
+#logo2{
+    height: 80px;
+    width: 80px;
     border-radius: 100px;
+    z-index: 10000000000000000000;
+    /* border: #ffffff solid 2px; */
+}
+.round2{
+ z-index: 100000000000000;
+ position: absolute;
+ bottom: 175%;
+ left: 50%;
+ transform: translateX(-50%)
+ 
+}
+i{
+    color: white;
+    position: relative; 
+    top: 105px;
+    left: 190px;
+}
+.PinHome2{
+    height: 100px;
+}
+.AddDiv2{
+    z-index: 100000000000000000000000000000;
+    position: relative;
+    bottom: 65px;
+    left: 17px;
+}
+#add2{
+   background: #01879000;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 0px;
+   border-top: 0px;
+   color: rgba(255, 255, 255, 0.692);
+   text-shadow: 0 0 10px rgb(0, 0, 0);
+   font-size: 2.5em;
+   position: absolute;
+   left: 21px;
+   top: 23px;
+   z-index: 100000;
+}
+.AddCover2{
+    position: relative;
+    left: 80px;
+    top: 90px;
+}
+
+#firstpage{
+    display: block;
+}
+#secondpage{
+    display: none
+}
+
+.coverUploader{
+    display: none;
+}
+
+h4{
+    position: absolute;
+    left: 115px;
+    bottom: 155px;
+    color: rgba(255, 255, 255, 0.534);
+    text-shadow: 0 0 10px black;
+    z-index: 1000000000000;
+}
+
+.everyimage{
+    position: absolute;
+
 }

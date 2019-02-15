@@ -1,0 +1,62 @@
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+
+<div class="maindiv">
+  <div class="box">
+    <div class="row">
+      <div class="column1">
+        <div class="thelogo">
+          <img class="PinHome" src="../../assets/imgs/PinHome icon.png">
+        </div>
+        <h1>Please fill in a few more spaces to finish signing up and we're good to go</h1>
+      </div>
+      <div class="column">
+        <!-- <p class="Account">
+              Please fill in a few more spaces to finish signing up and we're good to go.
+          </p> -->
+        <h2>Add you cover and logo images</h2>
+        <div class="round">
+          <img src="../../assets/imgs/Dp.jpg" alt="" class="logo">
+          <div class="AddDiv">
+            <button id="add" class="material-icons">add</button>
+          </div>
+        </div>
+        <div class="Thecover">
+            <div class="AddCover">
+                <button class="theAddCoverBTN">Add image from gallery</button>
+              </div>
+          <img src="../../assets/imgs/default-cover.jpg" alt="" class="cover">
+        </div>
+        <label for="">
+          <i class="material-icons">person</i>
+        </label>
+        <input style="height: 8000px" [(ngModel)]="email" type="email" placeholder="Full Name(Representative)">
+
+        <label for="">
+          <i class="material-icons">phone</i>
+        </label>
+        <input style="height: 8000px" [(ngModel)]="email" type="email" placeholder="Phone">
+
+        <label for="">
+          <i class="material-icons">description</i>
+        </label>
+        <textarea style="height: 8000px" class="thetextarea" [(ngModel)]="password" type="password" placeholder="Decription"></textarea>
+
+        <label for="">
+          <i class="material-icons">location_on</i>
+        </label>
+        <textarea style="height: 8000px" class="thetextarea" [(ngModel)]="password" type="password" placeholder="Address"></textarea>
+
+
+
+
+        <div class="theSumbitButton">
+          <button class="submitBtn" (click)="showPage2()">Submit</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
